@@ -1,0 +1,15 @@
+# Compilados
+*.o
+*.obj
+*.exe
+*.out
+
+# Pastas de build
+build/
+dist/
+
+# Arquivos temporarios do editor/sistema
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
