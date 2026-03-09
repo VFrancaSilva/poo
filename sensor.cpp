@@ -9,7 +9,10 @@ double media(const vector<double>& valores) {
 }
 
 int main() {
-    vector<double> leituras = {21.1, 22.4, 23.0, 21.8};
-    cout << "Media C++: " << media(leituras) << endl;
+    cout << "Informe os valores lidos: " << endl;
+    double temp1, temp2, temp3, temp4;
+    cin >> temp1 >> temp2 >> temp3 >> temp4;
+    vector<double> leituras = {temp1, temp2, temp3, temp4};
+    cout << "Media das Temperaturas: " << media(leituras) << endl;
     return 0;
 }
