@@ -1,15 +1,44 @@
-# Compilados
-*.o
-*.obj
+# --- Executáveis e Binários ---
+# Bloqueia ficheiros compilados em Windows, Linux e macOS
 *.exe
 *.out
+*.app
+*.bin
+*.elf
 
-# Pastas de build
-build/
-dist/
+# --- Objetos e Bibliotecas ---
+# Ficheiros intermediários de compilação
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
 
-# Arquivos temporarios do editor/sistema
-*.tmp
-*.log
+# --- Pastas de Build e Ferramentas ---
+# Ignora pastas criadas por sistemas como CMake ou IDEs
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+
+# --- Configurações de IDEs (Personalizadas) ---
+# Ignora ficheiros do VS Code, Visual Studio e CLion
+.vscode/
+.vs/
+.idea/
+*.user
+*.suo
+*.sln
+*.vcxproj
+
+# --- Ficheiros de Sistema e Temporários ---
 .DS_Store
 Thumbs.db
+*.log
+*.tmp
