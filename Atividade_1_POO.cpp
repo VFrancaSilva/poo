@@ -42,19 +42,20 @@ class Carro {
 
 int main() {
   Carro meuCarro;
+  
   cout << "Digite a marca do carro: ";
   cin >> meuCarro.marca;
   cout << "Digite o modelo do carro: ";
   cin >> meuCarro.modelo;
   cout << "Digite o ano do carro: ";
   cin >> meuCarro.ano;
-  // meuCarro.marca = "Ford";
-  // meuCarro.modelo = "Mustang";
-  // meuCarro.ano = 1969;
 
   cout << "--- Veiculo: " << meuCarro.marca << " " << meuCarro.modelo << " " << meuCarro.ano << " ---" << endl;
-
-  meuCarro.acelerar(33);  // Acelera 1
+  
+  cout << "Digite a velocidade desejada: ";
+  int velocidadeDesejada; 
+  
+  meuCarro.acelerar(velocidadeDesejada);  // Acelera 1
   meuCarro.acelerar(23);  // Acelera 2
   meuCarro.acelerar(15);  // Acelera 3
   meuCarro.frear(40);     // Freia 1
